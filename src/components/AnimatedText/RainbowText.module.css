@@ -1,0 +1,33 @@
+.rainbowText {
+  background-size: 400% 400%;
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 4s ease infinite;
+  display: inline-block;
+}
+
+.rainbowSpeedSlow {
+  animation-duration: 6s;
+}
+
+.rainbowSpeedMedium {
+  animation-duration: 4s;
+}
+
+.rainbowSpeedFast {
+  animation-duration: 2s;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
